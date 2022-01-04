@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <form id="dlform" name="dlform" action="/converting_video" method="post">
+        <div class="input-area">
+            <input id="url" type="text" name="url" placeholder="Insert URL">
+        </div>
+        <div class="button-area">
+            <button id="submit" type="submit" form="dlform" value="Download">Convert</button>
+            <br><br><br><br>
+                <span id="info" hidden>Converting... Please wait, it could take time.</span>
+        </div>
+    </form>
+{% endblock content %}

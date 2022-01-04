@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static',filename='YouTubePy_tab_icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+    <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='index.js') }}"></script>
+    <title>Youtubepy</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../static/YouTubePy_logo.png" style="width: 720px; height: 200px;">
+            </div>
+            {% block content %} {% endblock content %}
+        </div>
+    </div>
+</body>
+</html>
